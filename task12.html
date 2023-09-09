@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-color: rgb(164, 75, 115);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            height: 100vh;
+        }
+        form {
+            background-color: rgb(134, 24, 73);
+            width: fit-content;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        input[type='text'],
+        input[type="password"],
+        input[type="number"],
+        textarea {
+            font-size: large;
+            display: flex;
+            width: 90%;
+            border-radius: 3px;
+            border: none;
+            padding: 7px;
+            margin: 5px 0;
+        }
+        label {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin: 5px 0;
+        }
+        select {
+            border-radius: 3px;
+            padding: 7px;
+            width: 50%;
+        }
+        table {
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 50vw;
+            height: 60vh;
+            margin: auto;
+            text-align: center;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            border-radius: 3px;
+            border: none;
+            background-color: rgb(245, 244, 244);
+            color: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="full_name">Name:</label></td>
+                    <td><input type="text" name="full_name"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="phone_number">Phone Number:</label></td>
+                    <td><input type="number" name="phone_number"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td>
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                        <input type="radio" name="gender" value="other">Other
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="language">Language:</label></td>
+                    <td>
+                        <select name="language">
+                            <option value="select_language">Select Language</option>
+                            <option value="Telugu">Telugu</option>
+                            <option value="Hindi">Hindi</option>
+                            <option value="English">English</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="zip_code">Zip-code:</label></td>
+                    <td><input type="text" name="zip_code"></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td><textarea name="address"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit"><b>Register</b></button></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
